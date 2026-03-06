@@ -218,9 +218,6 @@ remove_by_username :: proc(username: string, handle: os.Handle, vault: ^Vault, k
 }
 
 new :: proc(pairs: []KeyValuePair, handle: os.Handle, vault: ^Vault, key: []u8) -> VaultEntryError {
-    // potentially think of using an error enum instead
-    // other procedures working with bool should be fine, but this  one may benefit from
-    // a more descriptive error message
     entry := contstruct_entry(pairs) or_return
 
     passwords, ok := read_passwords(vault, key)
