@@ -1,6 +1,6 @@
 # Heimvault 🛡️
 
-Heimvault is a minimalist, efficient command-line secret manager. It is written in the [Odin programming language](https://odin-lang.org/) and leverages **Libsodium** for industry-standard, "misuse-resistant" cryptography.
+Heimvault is a minimalist, efficient command-line secret manager. It is written in the [Odin programming language](https://odin-lang.org/) and leverages [Libsodium](https://libsodium.gitbook.io/doc) for industry-standard, "misuse-resistant" cryptography. Passwords are processed with **Argon2id** for key derivation, while secrets are encrypted using **ChaCha20-Poly1305-IETF** authenticated encryption.
 
 ## Prerequisites
 
